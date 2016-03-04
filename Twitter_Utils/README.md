@@ -4,7 +4,7 @@
 ###Setup
 
 ```
-pip install -r requirements.txt
+sudo pip install -r requirements.txt
 ```
 
 Before running this script, you will have to establish environment variables for Twitter API keys.

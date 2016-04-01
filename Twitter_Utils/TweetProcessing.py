@@ -88,7 +88,7 @@ class TweetProcessor:
         except re.error:
         # UCS-2
             emoji_pattern = re.compile(u'([\u2600-\u27BF])|([\uD83C][\uDF00-\uDFFF])|([\uD83D][\uDC00-\uDE4F])|([\uD83D][\uDE80-\uDEFF])')
-        return emoji_pattern.sub('', tweet)
+        return emoji_pattern.sub(u'', tweet) # unicode u'' DM 3/31
 
     def remove_non_letter_and_space(self, tweet):
         return re.sub('[^a-zA-Z ]+', '', tweet)

@@ -26,8 +26,8 @@ class TestTweetProcessor(unittest.TestCase):
 
     def test_remove_emoji(self):
         # tweet_processor = TweetProcessor()
-        # self.assertEqual('', tweet_processor.remove_emoji(''))
-        assert True # TODO - Figure out how to test this
+        # self.assertEqual(u'', tweet_processor.remove_emoji(u''))
+        assert True # TODO - Figure out how to test this DM 3/31 python u'' for unicode. should be part of the test, its part of the processing
 
     def test_remove_extra_whitespaces(self):
         tweet_processor = TweetProcessor()

@@ -112,6 +112,7 @@ class EternalProcess:
             hour_min_time_now = datetime.datetime.now().strftime('%H:%M')
             did_delete = False
             # TODO - Refactor the line below this
+            # what have you done here Fred!?
             for i in xrange(len(self.end_times_list) - 1, -1, -1):
                 if self.end_times_list[i] == hour_min_time_now:
                     stream = self.stream_list[i]
